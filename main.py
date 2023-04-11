@@ -1,7 +1,8 @@
 import streamlit as st
 import requests
+import os
 
-YOUR_API_KEY = "9aa0d2d5" 
+YOUR_API_KEY = os.environ['API-KEY']
 st. set_page_config(layout="wide")
 movie_name = st.text_input ("Type the Title of the movie and press ⎆")
 
